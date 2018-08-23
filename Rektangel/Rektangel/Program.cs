@@ -51,6 +51,7 @@ namespace Oppgave_1
         {
             public int lengde;
             public int bredde;
+            public int a;
         }
     }
 }
