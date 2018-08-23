@@ -36,6 +36,8 @@ namespace Oppgave_1
             else Console.WriteLine("Rektangler er like!");
             Console.WriteLine("Trykk en tast for å fortsette ...");
             Console.ReadKey(true);
+
+            
         }
 
 
@@ -44,6 +46,11 @@ namespace Oppgave_1
             Console.WriteLine("hei");
             return bredde * lengde;
             
+        }
+        class Areal
+        {
+            public int lengde;
+            public int bredde;
         }
     }
 }
