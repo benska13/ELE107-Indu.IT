@@ -1,68 +1,98 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.Design.Serialization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Oppgave_1
+namespace Rektangel
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Tast inn dimensjoner til to rektangler.");
-            Console.WriteLine("Programmet skal sammenligne dem.");
+            //interface
+            object ro = new Rektangel();
 
-            // Oppretter nødvendige variabler
-            int r1Bredde; int r1Lengde; int r2Bredde; int r2Lengde;
+            Rektangel r = new Rektangel(5, 10);
+            Console.WriteLine("Rektangel: " + r.ToString());
 
-            // Leser inn dimensjoner
-            Console.Write("R1 - bredde: ");
-            r1Bredde = Convert.ToInt32(Console.ReadLine());
-            Console.Write("R1 - lengde: ");
-            r1Lengde = Convert.ToInt32(Console.ReadLine());
-            Console.Write("R2 - bredde: ");
-            r2Bredde = Convert.ToInt32(Console.ReadLine());
-            Console.Write("R2 - lengde: ");
-            r2Lengde = Convert.ToInt32(Console.ReadLine());
+            object o = r;
 
-            // Beregner arealer
-            int a1 = BeregnAreal(r1Bredde, r1Lengde);
-            int a2 = BeregnAreal(r2Bredde, r2Lengde);
+            Sirkel s = new Sirkel(1);
+            Console.WriteLine("sirkel" + s.ToString() + "har areal " + s.Areal());
 
-            // Sammenlginer
-            if (a1 < a2) Console.WriteLine("R2 er større!");
-            else if (a2 < a1) Console.WriteLine("R1 er større!");
-            else Console.WriteLine("Rektangler er like!");
-            Console.WriteLine("Trykk en tast for å fortsette ...");
+            IFigur enFigur = new Rektangel(1, 2);
+
+            Console.WriteLine("Figur: " + enFigur.ToString() + " har areal: " + enFigur.Areal());
+
+            List<IFigur> alleFigurer = new List<IFigur>();
+
+            int antall = 20;
+            Random random = new Random();
+            for (int i = 0; i < antall; i++)
+            {
+                if (random.Next(0, 2) == 0)
+                {
+                    alleFigurer.Add(new Sirkel(random.Next(0, 10)));
+                }
+                else
+                {
+                    Rektangel roRektangel = new Rektangel(random.Next(0, 10), random.Next(0, 20));
+                    alleFigurer.Add(roRektangel);
+                }
+            }
+
+            for (int i = 0; i < antall; i++)
+            {
+                Console.WriteLine("Figur: " + alleFigurer[i].ToString() + " har areal: " + alleFigurer[i].Areal());
+            }
+
+            Console.WriteLine("\n\n\n");
+            foreach (var x in alleFigurer)
+            {
+                Console.WriteLine("Figur: " + x.ToString() + " har areal: " + x.Areal());
+            }
+
+            Console.WriteLine("trykk en tast...");
             Console.ReadKey(true);
-
-            
         }
 
 
-        static int BeregnAreal(int bredde, int lengde)
+
+    }
+
+    class Sirkel : IFigur
+    {
+        private int _radius;
+
+        public int Radius
         {
-            Console.WriteLine("hei");
-            return bredde * lengde;
-            
+            get => _radius;
+            set
+            {
+                if (value < 0) _radius = 0;
+                else _radius = value;
+            }
         }
-        
 
-        class Rektangel
+        public Sirkel()
         {
-            public Rektangel(int lengde, int bredde)
-            {
-                Lengde = lengde;
-                Bredde = bredde;
-            }
-
-            public int Bredde { get; set; }
-
-            public int Lengde { get; set; }
-
-            public int Areal
-            {
-           
-            }
-            
+            Radius = 0;
         }
-        
+
+        public double Areal()
+        {
+            return Radius * Radius * Math.PI;
+        }
+        public Sirkel(int radius)
+        {
+            this.Radius = radius;
+        }
+
+        public override string ToString()
+        {
+            return "(" + Radius + ")";
+        }
     }
 }

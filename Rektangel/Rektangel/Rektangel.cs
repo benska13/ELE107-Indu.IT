@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace Rektangel
 {
-    class Rektangel
+    class Rektangel : IFigur
     {
-        int lengde;
-        int bredde;
+        int _lengde;
+        int _bredde;
 
         public Rektangel(int initB, int initL)
         {
@@ -23,28 +24,28 @@ namespace Rektangel
             Lengde = 0;
         }
 
-        public int Areal()
+        public double Areal()
         {
-            return lengde * bredde;
+            return _lengde * _bredde;
         }
 
         public int Lengde
         {
-            get { return lengde; }
+            get => _lengde;
             set
             {
-                if (value < 0) lengde = 0;
-                else lengde = value;
+                if (value < 0) _lengde = 0;
+                else _lengde = value;
             }
         }
 
         public int Bredde
         {
-            get { return bredde; }
+            get { return _bredde; }
             set
             {
-                if (value < 0) bredde = 0;
-                else bredde = value;
+                if (value < 0) _bredde = 0;
+                else _bredde = value;
             }
         }
 
@@ -57,30 +58,34 @@ namespace Rektangel
 
         public bool HarStorreArealEnn(Rektangel denAndre)
         {
-            bool svar = false;
-            if (this.lengde * this.bredde > denAndre.Lengde * denAndre.bredde) svar = true;
+            bool svar = this._lengde * this._bredde > denAndre.Lengde * denAndre._bredde;
             return svar;
         }
 
         public static bool ErStorre(Rektangel r1, Rektangel r2)
         {
             bool svar = false;
-            if ((r1.lengde * r1.bredde) > (r2.Lengde * r2.bredde)) svar = true;
+            if ((r1._lengde * r1._bredde) > (r2.Lengde * r2._bredde)) svar = true;
             return svar;
         }
 
-        public static bool operator > (Rektangel r1, Rektangel r2)
+        public static bool operator >(Rektangel r1, Rektangel r2)
         {
             bool svar = false;
-            if ((r1.lengde * r1.bredde) > (r2.Lengde * r2.bredde)) svar = true;
+            if ((r1._lengde * r1._bredde) > (r2.Lengde * r2._bredde)) svar = true;
             return svar;
         }
 
-        public static bool operator < (Rektangel r1, Rektangel r2)
+        public static bool operator <(Rektangel r1, Rektangel r2)
         {
             bool svar = true;
-            if ((r1.lengde * r1.bredde) > (r2.Lengde * r2.bredde)) svar = false;
+            if ((r1._lengde * r1._bredde) > (r2.Lengde * r2._bredde)) svar = false;
             return svar;
+        }
+
+        public override string ToString()
+        {
+            return "(" + Bredde.ToString() + ";" + Lengde.ToString() + ")";
         }
     }
 }
