@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Oppgave_1
 {
@@ -47,11 +43,26 @@ namespace Oppgave_1
             return bredde * lengde;
             
         }
-        class Areal
+        
+
+        class Rektangel
         {
-            public int lengde;
-            public int bredde;
-            public int a;
+            public Rektangel(int lengde, int bredde)
+            {
+                Lengde = lengde;
+                Bredde = bredde;
+            }
+
+            public int Bredde { get; set; }
+
+            public int Lengde { get; set; }
+
+            public int Areal
+            {
+           
+            }
+            
         }
+        
     }
 }
