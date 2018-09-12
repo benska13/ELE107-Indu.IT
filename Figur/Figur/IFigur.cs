@@ -21,6 +21,6 @@ namespace Figur
         }
 
         string ToString();
-
+        bool Equals(object p);
     }
 }

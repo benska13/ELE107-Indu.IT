@@ -23,7 +23,7 @@ namespace Figur
                         listFigur.Add(new Frikant("Grønn",2,3 ));
                         break;
                     case 2:
-                        listFigur.Add(new Srikel("Blå",1));
+                        listFigur.Add(new Sirkel("Blå",1));
                         break;
                     case 3:
                         listFigur.Add(new Trekant("Gul", 4, 5));
@@ -37,6 +37,16 @@ namespace Figur
             foreach (var ithem in listFigur)
             {
                 Console.WriteLine(ithem);
+            }
+
+            Console.WriteLine("SIRKLER");
+
+            foreach (var ithem in listFigur)
+            {
+                if (ithem is Sirkel)
+                {
+                    Console.WriteLine(ithem);
+                }
             }
 
             Console.ReadKey();

@@ -18,14 +18,13 @@ namespace Oblig1_ELE107
             {
                 if (i<6)
                 {
-                    sensorList.Add(new Temperaturmaaler(id: i));
+                    sensorList.Add(new Temperaturmaaler());
                 }
                 else
                 {
-                    sensorList.Add(new Trykkmaler(id:i));
+                    sensorList.Add(new Trykkmaler());
                 }
             }
-
             for (int i = 0; i < 6; i++)
             {
               
@@ -46,113 +45,11 @@ namespace Oblig1_ELE107
             foreach (var sensor in sensorList)
             {
                 sensor.Maal();
-                Console.WriteLine($"ID: "{sensor.});
+                Console.WriteLine($"ID: {sensor.ToString()}");
             }
 
             
 
-        }
-    }
-
-    interface ISensor
-    {
-        double PosisonX
-        {
-            get;
-            set;
-        }
-
-        double PosisonY
-        {
-            get;
-            set;
-        }
-
-        void Maal();
-        string ToString();
-    }
-
-    class Temperaturmaaler : ISensor
-    {
-        private double _posisonX;
-        private double _posisonY;
-
-        readonly Random _random=new Random();
-
-        public Temperaturmaaler(double temperatur=0, double posisonX = 0, double posisonY = 0, double id =0)
-        {
-            Temperatur = temperatur;
-            PosisonX = posisonX;
-            PosisonY = posisonY;
-            Id = id;
-        }
-
-        private double Id { get; set; }
-        private double Temperatur
-        {
-            get;
-            set;
-        }
-
-
-        public double PosisonX
-        {
-            get => _posisonX;
-            set
-            {
-                if (value <= 179 && value >= -180)
-                {
-                    PosisonX = value;
-                }
-            }
-        }
-
-        public double PosisonY
-        {
-            get => _posisonY;
-            set
-            {
-                if (value <= 90 && value >= -90)
-                {
-                    PosisonY = value;
-                }
-            }
-        }
-
-        public void Maal()
-        {
-            double tall = _random.Next(12731);
-            Temperatur= tall / 10;
-
-        }
-
-        public override string ToString()
-        {
-            return $"{Id}-({PosisonX},{PosisonY})";
-        }
-    }
-
-    class Trykkmaler:ISensor
-    {
-        public double Trykk { get; set; }
-        public double PosisonX { get; set; }
-        public double PosisonY { get; set; }
-        readonly Random _random=new Random();
-
-        public Trykkmaler(double trykk=0, double posisonX=0, double posisonY=0, double id=0)
-        {
-            Trykk = trykk;
-            PosisonX = posisonX;
-            PosisonY = posisonY;
-            Id = id;
-        }
-
-        public double Id { get; set; }
-
-        public void Maal()
-        {
-            double tall = _random.Next(5, 25);
-            Trykk = tall / 10;
         }
     }
 }

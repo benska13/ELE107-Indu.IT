@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Figur
 {
-    class Srikel : IFigur
+    class Sirkel : IFigur
     {
-        public Srikel(string farge, double radius)
+        public Sirkel(string farge, double radius)
         {
             Farge = farge;
             Radius = radius;
