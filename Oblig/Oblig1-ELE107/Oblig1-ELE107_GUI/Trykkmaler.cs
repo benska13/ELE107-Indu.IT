@@ -2,6 +2,7 @@
 
 namespace Oblig1_ELE107
 {
+    [System.Serializable]
     class Trykkmaaler : ISensor
     {
         readonly Random _random = new Random();

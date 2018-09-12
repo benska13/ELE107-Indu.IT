@@ -2,6 +2,7 @@
 
 namespace Oblig1_ELE107
 {
+
     interface ISensor
     {
         double PosisjonX

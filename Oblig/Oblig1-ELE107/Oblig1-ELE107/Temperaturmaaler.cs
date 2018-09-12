@@ -2,6 +2,7 @@
 
 namespace Oblig1_ELE107
 {
+    [System.Serializable]
     class Temperaturmaaler : ISensor
     {
         private double _posisjonX;
