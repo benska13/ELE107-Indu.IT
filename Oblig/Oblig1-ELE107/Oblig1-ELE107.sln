@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oblig1-ELE107", "Oblig1-ELE107\Oblig1-ELE107.csproj", "{436204EC-65FC-486A-99C0-C7B2AB3E8FD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Oblig1-ELE107_GUI", "Oblig1-ELE107_GUI\Oblig1-ELE107_GUI.csproj", "{0891617B-37EA-4742-A22C-FE8DED2887AA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUISensorer", "Oblig1-ELE107_GUI\GUISensorer.csproj", "{0891617B-37EA-4742-A22C-FE8DED2887AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

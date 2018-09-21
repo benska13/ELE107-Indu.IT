@@ -8,7 +8,7 @@ namespace Oblig1_ELE107
         private double _posisjonX;
         private double _posisjonY;
 
-        
+
 
         public Temperaturmaaler()
         {
@@ -58,8 +58,7 @@ namespace Oblig1_ELE107
                 {
                     _posisjonY = -90;
                 }
-                else if (value >
- 90)
+                else if (value > 90)
                 {
                     _posisjonY = 90;
                 }
@@ -73,7 +72,7 @@ namespace Oblig1_ELE107
         public void Maal(Random random)
         {
             double tall = random.Next(12731);
-            Temperatur =tall/10;
+            Temperatur = tall / 10;
 
         }
 

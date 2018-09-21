@@ -15,23 +15,19 @@ namespace Oblig1_ELE107_GUI
     [System.Serializable]
     public partial class MainWindow : Window
     {
-        ObservableCollection<ISensor> _sensors = new ObservableCollection<ISensor>();
-        Random _random = new Random();
-        private const string Filnavn = "SensorFil.dat";
+        ObservableCollection<ISensor> _sensors = new ObservableCollection<ISensor>();   //liste for sensorer
+        Random _random = new Random();          
+        private const string Filnavn = "SensorFil.dat";         
 
         public MainWindow()
         {
             InitializeComponent();
-            SensorList.ItemsSource = _sensors;
-
-
+            SensorList.ItemsSource = _sensors;      
         }
-
-
-
+        
         private void NyTemperatursensor_Click(object sender, RoutedEventArgs e)
         {
-            _sensors.Add(new Temperaturmaaler(_sensors.Count + 1));       //kan gi flere sensorer samme id
+            _sensors.Add(new Temperaturmaaler(_sensors.Count + 1));       //kan gi flere sensorer samme id hvis en blir slettet
         }
 
         private void NyTrykksensor_Click(object sender, RoutedEventArgs e)
@@ -41,7 +37,7 @@ namespace Oblig1_ELE107_GUI
 
         private void NyMåling_Click(object sender, RoutedEventArgs e)
         {
-            switch (SensorList.SelectedItem)
+            switch (SensorList.SelectedItem)        //Sjekker hvilken datatype det er og caster den til rett type for å bruke metoder
             {
                 case Temperaturmaaler temp:
                     temp.Maal(_random);
@@ -50,10 +46,10 @@ namespace Oblig1_ELE107_GUI
                     trykk.Maal(_random);
                     break;
             }
-            SensorList_SelectionChanged(null, null);
+            SensorList_SelectionChanged(null, null);            //oppdatere textbox
         }
 
-        private void SensorList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void SensorList_SelectionChanged(object sender, SelectionChangedEventArgs e)        //printer til textbox
         {
             switch (SensorList.SelectedItem)
             {
@@ -65,7 +61,7 @@ namespace Oblig1_ELE107_GUI
                     break;
             }
         }
-        static void Deserialize<T>(ref ObservableCollection<T> listen, string filnavn)
+        static void Deserialize<T>(ref ObservableCollection<T> listen, string filnavn)      //Lese/skrive til fil
         {
             listen = null;
 
@@ -88,7 +84,7 @@ namespace Oblig1_ELE107_GUI
                 fs.Close();
             }
         }
-        static void Serialize<T>(ref ObservableCollection<T> listen, string filnavn)
+        static void Serialize<T>(ref ObservableCollection<T> listen, string filnavn)        //Lese/skrive til fil
         {
             //Lagring av listen med objekter
 
@@ -111,9 +107,13 @@ namespace Oblig1_ELE107_GUI
             }
         }
 
+
+        ///Handling box,
+        ///  -Endre navn og evt type for å få mer oversiktlig 
+   
         private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            SensorList.ItemsSource = _sensors;
         }
 
         private void ComboBoxItem_Selected(object sender, RoutedEventArgs e)
@@ -121,14 +121,12 @@ namespace Oblig1_ELE107_GUI
             if (File.Exists(Filnavn))
             {
                 Deserialize<ISensor>(ref _sensors, Filnavn);
-                SensorList.ItemsSource = _sensors;
             }
         }
 
         private void ComboBoxItem_Selected_1(object sender, RoutedEventArgs e)
         {
             Serialize(ref _sensors, Filnavn);
-            SensorList.ItemsSource = _sensors;
         }
 
         private void ComboBoxItem_Selected_2(object sender, RoutedEventArgs e)
