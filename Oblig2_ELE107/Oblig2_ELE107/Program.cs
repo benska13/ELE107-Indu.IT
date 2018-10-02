@@ -75,7 +75,6 @@ namespace Oblig2_ELE107
                                     state = State.NoMessage;
                                 }
                                 break;
-
                             default:
                                 throw new ArgumentOutOfRangeException();
                         }
@@ -83,11 +82,9 @@ namespace Oblig2_ELE107
 
                     Console.WriteLine($"Sammendrag for sesjon: {filename}");
                     var messsageA = messageString.Split(' ', '\n');                       //Ord skilles med mellomrom eller ny linje. Mangel på mellomrom i noen av filene.
-                    Console.WriteLine(messageString);
                     Console.WriteLine($"Antall meldinger: {messageCount}");
                     Console.WriteLine($"Antall ord totalt: {messsageA.Length}");
                     Console.WriteLine($"Antall tegn totalt: {messageString.Length}\n\n");
-
                 }
                 Console.ReadKey();
             }
