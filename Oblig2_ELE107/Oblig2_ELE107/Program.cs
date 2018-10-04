@@ -56,7 +56,7 @@ namespace Oblig2_ELE107
             string messageString = "";
             int messageCount = 0;
 
-            for (int i = 2; i < dataByte.Length; i++)
+            for (int i = 0; i < dataByte.Length; i++)
             {
                 switch (state)
                 {
