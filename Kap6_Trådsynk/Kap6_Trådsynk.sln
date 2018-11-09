@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kap6_Trådsynk", "Kap6_Trådsynk\Kap6_Trådsynk.csproj", "{A91EC087-ED32-42D6-8802-9AB6F4703A7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trådsynkronisering", "Trådsynkronisering\Trådsynkronisering.csproj", "{DF26D090-B2F3-4DC0-B690-E71CD7C2CAAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mutex", "mutex\mutex.csproj", "{FDEC4B80-0A71-4D4A-89F9-A5F544BEBEFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semaforer", "Semaforer\Semaforer.csproj", "{F0B0394B-4BAD-447D-A757-9D75987FDDFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A91EC087-ED32-42D6-8802-9AB6F4703A7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A91EC087-ED32-42D6-8802-9AB6F4703A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A91EC087-ED32-42D6-8802-9AB6F4703A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A91EC087-ED32-42D6-8802-9AB6F4703A7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF26D090-B2F3-4DC0-B690-E71CD7C2CAAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF26D090-B2F3-4DC0-B690-E71CD7C2CAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF26D090-B2F3-4DC0-B690-E71CD7C2CAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF26D090-B2F3-4DC0-B690-E71CD7C2CAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEC4B80-0A71-4D4A-89F9-A5F544BEBEFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEC4B80-0A71-4D4A-89F9-A5F544BEBEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEC4B80-0A71-4D4A-89F9-A5F544BEBEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEC4B80-0A71-4D4A-89F9-A5F544BEBEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0B0394B-4BAD-447D-A757-9D75987FDDFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0B0394B-4BAD-447D-A757-9D75987FDDFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0B0394B-4BAD-447D-A757-9D75987FDDFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0B0394B-4BAD-447D-A757-9D75987FDDFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB8FA2DE-F471-4000-B5D2-26E2D0B15E8A}
+	EndGlobalSection
+EndGlobal
