@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI_HT", "GUI_HT\GUI_HT.csproj", "{ADC9319B-FD09-4763-AB84-303EA4B18F62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MottaEnStreng", "MottaEnStreng\MottaEnStreng.csproj", "{97C82038-E7F6-4E44-BCCF-710CC3486C0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MottaEttTegn", "MottaEttTegn\MottaEttTegn.csproj", "{BCE0582D-9A96-4B61-AE8F-E9B4BCC98CDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sentral_gui", "Sentral_gui\Sentral_gui.csproj", "{94A24982-2DD7-4491-A73C-8AF8C677F276}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP_IP1", "TCP_IP1\TCP_IP1.csproj", "{B6ABD88E-624B-4F1E-885D-265F2806CE04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCP_IP Klient", "TCP_IP Klient\TCP_IP Klient.csproj", "{7FE6B2C1-A965-4BC9-9EEF-1373151209DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Klient-GUI-HT", "Klient-GUI-HT\Klient-GUI-HT.csproj", "{AD8F0B41-9130-4EA4-9B58-6DB8FF574D37}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADC9319B-FD09-4763-AB84-303EA4B18F62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC9319B-FD09-4763-AB84-303EA4B18F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC9319B-FD09-4763-AB84-303EA4B18F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC9319B-FD09-4763-AB84-303EA4B18F62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97C82038-E7F6-4E44-BCCF-710CC3486C0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97C82038-E7F6-4E44-BCCF-710CC3486C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97C82038-E7F6-4E44-BCCF-710CC3486C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97C82038-E7F6-4E44-BCCF-710CC3486C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCE0582D-9A96-4B61-AE8F-E9B4BCC98CDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE0582D-9A96-4B61-AE8F-E9B4BCC98CDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE0582D-9A96-4B61-AE8F-E9B4BCC98CDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE0582D-9A96-4B61-AE8F-E9B4BCC98CDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94A24982-2DD7-4491-A73C-8AF8C677F276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94A24982-2DD7-4491-A73C-8AF8C677F276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94A24982-2DD7-4491-A73C-8AF8C677F276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94A24982-2DD7-4491-A73C-8AF8C677F276}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6ABD88E-624B-4F1E-885D-265F2806CE04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6ABD88E-624B-4F1E-885D-265F2806CE04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6ABD88E-624B-4F1E-885D-265F2806CE04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6ABD88E-624B-4F1E-885D-265F2806CE04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FE6B2C1-A965-4BC9-9EEF-1373151209DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FE6B2C1-A965-4BC9-9EEF-1373151209DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FE6B2C1-A965-4BC9-9EEF-1373151209DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FE6B2C1-A965-4BC9-9EEF-1373151209DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD8F0B41-9130-4EA4-9B58-6DB8FF574D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD8F0B41-9130-4EA4-9B58-6DB8FF574D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD8F0B41-9130-4EA4-9B58-6DB8FF574D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD8F0B41-9130-4EA4-9B58-6DB8FF574D37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6956620A-4962-44DC-84A1-0DA4A4248D3C}
+	EndGlobalSection
+EndGlobal

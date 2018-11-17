@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rektangel", "Rektangel\Rektangel.csproj", "{D7AA2A16-770A-49EC-A532-1B3E3C80CBBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rektangel_adis", "Rektangel_adis\Rektangel_adis.csproj", "{A7E75710-B044-4B24-90D2-94D7DE2AEE3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D7AA2A16-770A-49EC-A532-1B3E3C80CBBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7AA2A16-770A-49EC-A532-1B3E3C80CBBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7AA2A16-770A-49EC-A532-1B3E3C80CBBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7AA2A16-770A-49EC-A532-1B3E3C80CBBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7E75710-B044-4B24-90D2-94D7DE2AEE3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E75710-B044-4B24-90D2-94D7DE2AEE3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E75710-B044-4B24-90D2-94D7DE2AEE3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E75710-B044-4B24-90D2-94D7DE2AEE3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {812F2DD5-E944-4B78-A3D2-BAD3D3419FBD}
+	EndGlobalSection
+EndGlobal

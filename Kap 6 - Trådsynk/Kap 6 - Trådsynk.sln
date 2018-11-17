@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trådsynkronisering", "Trådsynkronisering\Trådsynkronisering.csproj", "{DF26D090-B2F3-4DC0-B690-E71CD7C2CAAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mutex", "mutex\mutex.csproj", "{FDEC4B80-0A71-4D4A-89F9-A5F544BEBEFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Semaforer", "Semaforer\Semaforer.csproj", "{F0B0394B-4BAD-447D-A757-9D75987FDDFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulator", "Simulator\Simulator.csproj", "{0ABC9D15-CCDB-43F2-AA32-15EEED9917F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulator-GUI", "Simulator-GUI\Simulator-GUI.csproj", "{54280317-2B15-4953-BD41-CD0D63B1DA42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lotto med tråder", "Lotto med tråder\Lotto med tråder.csproj", "{B29B312D-A400-4159-9426-4028CBC04BBB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7EC38EBE-E399-4D38-9513-967B11AAED65}"
+	ProjectSection(SolutionItems) = preProject
+		Oppgave_2.cs = Oppgave_2.cs
+		Oppgave_3.cs = Oppgave_3.cs
+		Program_Les.cs = Program_Les.cs
+		Program_Skriv.cs = Program_Skriv.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF26D090-B2F3-4DC0-B690-E71CD7C2CAAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF26D090-B2F3-4DC0-B690-E71CD7C2CAAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF26D090-B2F3-4DC0-B690-E71CD7C2CAAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF26D090-B2F3-4DC0-B690-E71CD7C2CAAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEC4B80-0A71-4D4A-89F9-A5F544BEBEFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEC4B80-0A71-4D4A-89F9-A5F544BEBEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEC4B80-0A71-4D4A-89F9-A5F544BEBEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEC4B80-0A71-4D4A-89F9-A5F544BEBEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0B0394B-4BAD-447D-A757-9D75987FDDFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0B0394B-4BAD-447D-A757-9D75987FDDFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0B0394B-4BAD-447D-A757-9D75987FDDFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0B0394B-4BAD-447D-A757-9D75987FDDFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0ABC9D15-CCDB-43F2-AA32-15EEED9917F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0ABC9D15-CCDB-43F2-AA32-15EEED9917F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0ABC9D15-CCDB-43F2-AA32-15EEED9917F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0ABC9D15-CCDB-43F2-AA32-15EEED9917F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54280317-2B15-4953-BD41-CD0D63B1DA42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54280317-2B15-4953-BD41-CD0D63B1DA42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54280317-2B15-4953-BD41-CD0D63B1DA42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54280317-2B15-4953-BD41-CD0D63B1DA42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B29B312D-A400-4159-9426-4028CBC04BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B29B312D-A400-4159-9426-4028CBC04BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B29B312D-A400-4159-9426-4028CBC04BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B29B312D-A400-4159-9426-4028CBC04BBB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CB8FA2DE-F471-4000-B5D2-26E2D0B15E8A}
+	EndGlobalSection
+EndGlobal
