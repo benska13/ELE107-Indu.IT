@@ -1,4 +1,4 @@
-﻿namespace sentral_gui
+﻿namespace LesFraFil
 {
     partial class Form1
     {

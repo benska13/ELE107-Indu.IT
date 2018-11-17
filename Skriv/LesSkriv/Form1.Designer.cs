@@ -1,4 +1,4 @@
-﻿namespace sentral_gui
+﻿namespace LesSkriv
 {
     partial class Form1
     {
