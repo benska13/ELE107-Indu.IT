@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Veibom-GUI", "Veibom-GUI\Ve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VeibomLib", "VeibomLib\VeibomLib.csproj", "{5A5E639C-5D58-4F6B-AA9A-641CD53C07CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "O3c", "O3c\O3c.csproj", "{EABC3DD0-DF6B-42E4-8F22-B09B988850C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{5A5E639C-5D58-4F6B-AA9A-641CD53C07CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A5E639C-5D58-4F6B-AA9A-641CD53C07CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A5E639C-5D58-4F6B-AA9A-641CD53C07CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EABC3DD0-DF6B-42E4-8F22-B09B988850C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EABC3DD0-DF6B-42E4-8F22-B09B988850C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EABC3DD0-DF6B-42E4-8F22-B09B988850C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EABC3DD0-DF6B-42E4-8F22-B09B988850C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

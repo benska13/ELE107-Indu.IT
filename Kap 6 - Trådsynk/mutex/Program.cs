@@ -24,16 +24,20 @@ namespace Trådsynkronisering
 
             r = new Random();
 
-            ThreadPool.QueueUserWorkItem(UtskriftH);
-            ThreadPool.QueueUserWorkItem(UtskriftB);
+            //ThreadPool.QueueUserWorkItem(UtskriftH);
+            //ThreadPool.QueueUserWorkItem(UtskriftB);
             ThreadPool.QueueUserWorkItem(UtskriftB);
             ThreadPool.QueueUserWorkItem(UtskriftS);
+        
 
             Console.ReadKey();
         }
 
         static void UtskriftB(object o)
         {
+            Console.SetCursorPosition(10,10);
+
+
             m1.WaitOne();
             for (int i = 0; i < 10; i++)
             {
@@ -45,13 +49,14 @@ namespace Trådsynkronisering
 
         static void UtskriftS(object o)
         {
-            m1.WaitOne();
+            Console.SetCursorPosition(5,5);
+           // m1.WaitOne();
             for (int i = 0; i < 10; i++)
             {
                 Thread.Sleep(r.Next(500, 1001));
                 Console.Write(i);
             }
-            m1.ReleaseMutex();
+           // m1.ReleaseMutex();
         }
 
         static void UtskriftH(object o)
